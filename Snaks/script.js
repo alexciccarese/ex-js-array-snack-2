@@ -53,4 +53,9 @@ Creare un array (longBooksTitles) che contiene solo i titoli dei libri contenuti
 Stampa in console ogni titolo nella console. */
 
 const longBooks = books.filter((book) => book.pages > 300)
-console.log(longBooks);
+
+const longBooksTitles = longBooks.map(book => book.title)
+
+longBooksTitles.forEach(book => {
+  console.log(book);
+});
